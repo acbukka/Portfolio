@@ -1,0 +1,536 @@
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: game;
+  src: url(../fonts/Dirtchunk.otf);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: -webkit-linear-gradient(225deg, rgb(255, 139, 104) 21%, rgb(255, 112, 81));
+  background: -moz-linear-gradient(225deg, rgb(255, 139, 104) 21%, rgb(255, 112, 81));
+  background: linear-gradient(225deg, rgb(255, 139, 104) 21%, rgb(255, 112, 81));
+}
+
+.welcome {
+  font-family: game;
+  text-align: center;
+  font-size: 85px;
+  letter-spacing: 5px;
+  margin-top: 20px;
+  margin-bottom: 85px;
+  color: #fedeb0;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+}
+.info {
+  font-family: 'Poppins',
+  sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #fedeb0;
+  letter-spacing: 1px;
+  margin-bottom: 95px;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+}
+.instructions {
+  text-align: center;
+}
+.play-btn {
+  display: none;
+}
+.goalText {
+  margin-top: -20px;
+  font-family: 'Poppins',
+  sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: #525252;
+  margin-bottom: 85px;
+}
+.goalText span {
+  font-family: 'Poppins',
+  sans-serif;
+  color: #fedeb0;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+.container {
+  width: 1200px;
+  border-radius: 50px;
+  border: 3px solid black;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 45px;
+  background-image: url(../assets/orange.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -264px;
+}
+.kaban {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  bottom: 19px;
+  left: 20px;
+  transform: scaleX(-1);
+}
+.kaban img {
+  height: 70px;
+  width: 70px;
+}
+.kabanActive {
+  animation: kabanAnimate 0.5s linear infinite;
+}
+@keyframes kabanAnimate {
+  0% {
+    bottom: 19px;
+  }
+  45%,55% {
+    bottom: 160px;
+  }
+}
+.block {
+  height: 80px;
+  width: 125px;
+  position: absolute;
+  bottom: 20px;
+  right: -20px;
+}
+.block img {
+  height: 80px;
+  width: 125px;
+}
+
+
+.blockActive {
+  animation: blockAnimate 1s linear infinite;
+}
+@keyframes blockAnimate{
+  0% {
+    right: -125px;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.road {
+  height: 30px;
+  width: 1200px;
+  position: absolute;
+  bottom: 0;
+}
+.road img {
+  height: 30px;
+  width: 2000px;
+  position: absolute;
+  left: 0;
+  animation: none;
+}
+@keyframes roadAnimate {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -800px;
+  }
+}
+.cloud {
+  height: 80px;
+  width: 1200px;
+  border-radius: 40px;
+  position: absolute;
+  top: 30px;
+}
+.cloud img {
+  height: 80px;
+  width: 2000px;
+  position: absolute;
+  left: -2000px;
+  animation: none;
+}
+@keyframes cloudAnimate {
+  0% {
+    left: -2000px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+.hightScore {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+.score {
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 35px;
+  right: 30px;
+}
+.gameOver {
+  display: none;
+  position: absolute;
+  font-size: 70px;
+  left: calc(50% - 165px);
+  top: calc(50% - 90px);
+  width: 362px;
+  height: 80px;
+  color: #525252;
+}
+
+.totalScore {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  left: calc(50% - 95px);
+  top: calc(50% - 5px);
+  width: 362px;
+  height: 80px;
+  color: #525252;
+}
+
+ul.footer__list {
+  
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-left: 55px;
+}
+
+
+.year {
+  color: #525252;
+  font-family: 'Poppins',
+  sans-serif;
+  margin-right: 20px;
+}
+a {
+  color: #525252;
+  font-family: 'Poppins',
+  sans-serif;
+  margin-right: 20px;
+  transition: all .3s;
+  } 
+    
+a:hover {
+  color: #fedeb0;
+}
+
+
+.rsschool path {
+  fill: #525252;
+  transition: all .3s;
+}
+
+.rsschool:hover path {
+  fill: #fedeb0;
+}
+
+.lastScore {
+  position: absolute;
+  top: 19%;
+  right: 90px;
+}
+
+.last-score__title {
+  font-family: game;
+  font-size: 20px;
+  color: #fedeb0;
+  text-shadow: 1px 0 1px #000,
+  0 1px 1px #000,
+  -1px 0 1px #000,
+  0 -1px 1px #000;
+  letter-spacing: 2px;
+}
+
+.lastScr th {
+  font-style: italic;
+}
+
+.lastScr td,
+.lastScr th {
+  border: 1px solid black;
+  width: 90px;
+  padding: 8px 15px;
+}
+
+.scoreVar.active {
+  border-bottom: 2px solid #fedeb0;
+}
+
+.scoreNum.active {
+  border-bottom: 2px solid #fedeb0;
+}
+
+
+@media (max-width: 1800px) {
+  .lastScore {
+    right: 45px;
+  }
+  .container {
+    width: 1125px;
+  }
+}
+
+@media (max-width: 1640px) {
+  .lastScr {
+    right: 30px;
+  }
+  .container {
+    width: 1075px;
+    background-position: 0px -220px;
+  }
+  .goalText {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 1590px) {
+  .lastScore {
+    right: 45px;
+  }
+  .lastScr td,
+  .lastScr th {
+    width: 65px;
+    padding: 6px 8px;
+  }
+  .container {
+    width: 1055px;
+  }
+}
+
+
+@media (max-width: 1590px) {
+  .lastScore {
+    top: 21%;
+    right: 20px;
+  }
+  /* ul.footer__list {
+    margin-bottom: -29px;
+  } */
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 980px;
+    background-position: 0px -150px;
+  }
+  .lastScore {
+    top: 19%;
+  }
+}
+
+@media (max-width: 1360px) {
+  .lastScore {
+    right: 10px;
+  }
+  .container {
+    width: 900px;
+    background-position: 0px -100px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .lastScore {
+      display: none;
+    }
+}
+  
+@media (max-width: 905px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+  .welcome {
+    margin-bottom: 60px;
+  }
+  .container {
+    height: 355px;
+  }
+  .info {
+    display: none;
+  }
+  .play-btn {
+    display: block;
+    font-family: game;
+    text-align: center;
+    font-size: 40px;
+    border: 2px solid #fedeb0;
+    border-radius: 25px;
+    padding: 5px 25px;
+    background-color: transparent;
+    color: #fedeb0;
+    letter-spacing: 2px;
+    margin-bottom: 75px;
+    text-shadow: 1px 0 1px #000,
+      0 1px 1px #000,
+      -1px 0 1px #000,
+      0 -1px 1px #000;
+  }
+  .goalText {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 755px) {
+  .container {
+    width: 650px;
+    background-position: 0px -35px;
+  }
+}
+
+@media (max-width: 655px) {
+  .container {
+    width: 550px;
+    background-position: 0px -25px;
+  }
+}
+
+@media (max-width: 555px) {
+  .container {
+    width: 480px;
+    background-position: 0px -25px;
+  }
+  .block {
+    right: -100px;
+  }
+}
+
+@media (max-width: 485px) {
+  .container {
+    width: 430px;
+    background-position: 0px -25px;
+  }
+  .block {
+    right: -100px;
+  }
+  .gameOver {
+    left: calc(50% - 190px);
+  }
+  .kaban {
+    left: -15px;
+  }
+}
+@media (max-width: 455px) {
+  .block {
+    right: -150px;
+  }
+  .welcome {
+    font-size: 70px;
+  }
+  .goalText {
+    margin-bottom: 60px;
+  }
+  .play-btn {
+    margin-bottom: 80px;
+  }
+  .gameOver {
+    left: calc(50% - 180px);
+  }
+}
+
+@media (max-width: 435px) {
+  .container {
+    width: 380px;
+  }
+  .gameOver {
+    font-size: 60px;
+  }
+  .totalScore {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    height: none;
+  }
+  .container {
+    width: 360px;
+  }
+  .welcome {
+    font-size: 60px;
+  }
+  .play-btn {
+    margin-bottom: 85px;
+  }
+  .goalText {
+    margin-bottom: 70px;
+  }
+  .play-btn {
+    margin-bottom: 83px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    width: 320px;
+  }
+  .gameOver {
+    left: calc(50% - 140px);
+    font-size: 53px;
+  }
+  .welcome {
+    font-size: 55px;
+  }
+  .goalText {
+    margin-bottom: 73px;
+  }
+  .play-btn {
+    margin-bottom: 87px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+    width: 320px;
+  }
+  .gameOver {
+    left: calc(50% - 140px);
+    font-size: 53px;
+  }
+  .welcome {
+    font-size: 55px;
+  }
+  .goalText {
+    margin-bottom: 58px;
+  }
+  .play-btn {
+    margin-bottom: 73px;
+  }
+}
+
+@media (max-width: 335px) {
+  .container {
+    width: 320px;
+  }
+}

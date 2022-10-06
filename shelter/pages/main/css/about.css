@@ -1,0 +1,37 @@
+.about {
+  margin-bottom: 100px;
+}
+
+.about-item {
+  margin-top: 14px;
+  max-width: 430px;
+}
+
+.about-title {
+  margin-bottom: 23px;
+  max-width: 370px;
+  color: #292929;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+
+.about-text {
+  max-width: 430px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4c4c4c;
+}
+
+.about-inner {
+  margin: 0 auto;
+  max-width: 850px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}

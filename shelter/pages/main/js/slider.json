@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Jennifer",
+    "img": "../../assets/images/slider/jennifer.png"
+  },
+  {
+    "name": "Sophia",
+    "img": "../../assets/images/slider/sophia.png"
+  },
+  {
+    "name": "Woody",
+    "img": "../../assets/images/slider/woody.png"
+  },
+  {
+    "name": "Scarlett",
+    "img": "../../assets/images/slider/scarlett.png"
+  },
+  {
+    "name": "Katrine",
+    "img": "../../assets/images/slider/katrine.png"
+  },
+  {
+    "name": "Timmy",
+    "img": "../../assets/images/slider/timmy.png"
+  },
+  {
+    "name": "Freddie",
+    "img": "../../assets/images/slider/freddie.png"
+  },
+  {
+    "name": "Charly",
+    "img": "../../assets/images/slider/charly.png"
+  }
+]

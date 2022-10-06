@@ -1,0 +1,305 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Shrek;
+  src: url(../fonts/shrek.ttf);
+}
+
+body {
+  background-image: url(../images/gree-phone.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #faebd7;
+  font-family: Shrek;
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+
+.donkey__img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  content: "";
+  transform: translateX(100%);
+  width: 180px;
+  height: 304px;
+  transition: all .3s;
+}
+
+.footer__secret.jump .donkey__img {
+  transform: translateX(0%);
+}
+
+.welcome {
+  margin-top: 20px;
+  text-align: center;
+  color: #faebd7;
+  letter-spacing: 3.5px;
+  font-size: 75px;
+}
+
+.shrek-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shrek-img {
+  width: 300px;
+  height: 506px;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shrek-btn {
+  font-size: 25px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+  border: 1px solid antiquewhite;
+  cursor: pointer;
+  transition: all .3s;
+}
+.shrek-btn:hover {
+  background-color: #177245;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+}
+.content {
+  max-width: 900px;
+  height: 76px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-family: 'Poppins',
+  sans-serif;
+  font-size: 25px;
+}
+
+ul.footer__list {
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-left: 35px;
+  a {
+    color: antiquewhite;
+    font-family: 'Poppins',
+    sans-serif;
+    margin-right: 20px;
+    transition: all .3s;
+  }
+  a:hover {
+    color: #177245;
+  }
+}
+
+.rsschool path {
+  fill: #fff;
+  transition: all .3s;
+}
+
+.rsschool:hover path {
+  fill: #177245;
+}
+
+.lang-changer__en {
+  margin-right: 12px;
+  border-radius: 5px;
+  height: 25px;
+  border: 1px solid antiquewhite;
+  background-color: antiquewhite;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.lang-changer__ru {
+  margin-left: 12px;
+  border-radius: 5px;
+  height: 25px;
+  border: 1px solid antiquewhite;
+  background-color: antiquewhite;
+  padding-bottom: 7px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.lang-changer__en:hover {
+  background-color: #177245;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+.lang-changer__ru:hover {
+  background-color: #177245;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+.lang-changer__en.active {
+  background-color: #177245;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+.lang-changer__ru.active {
+  background-color: #177245;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}
+
+
+@media (max-width: 1300px) {
+  .content {
+    max-width: 700px;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .shrek-img {
+    margin-left: 30px;
+  }
+  .donkey__img {
+    width: 150px;
+    height: 254px;
+  }
+}
+
+
+@media (max-width: 920px) {
+  .donkey__img {
+    width: 100px;
+    height: 169px;
+  }
+
+}
+
+@media (max-width: 790px) {
+  .donkey__img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    content: "";
+    transform: translateX(-100%);
+    transition: all .3s;
+  }
+  .footer__secret.jump .donkey__img {
+    transform: scaleX(-1) scaleY(-1) translateX(0%);
+  }
+}
+
+@media (max-width: 565px) {
+  ul.footer__list {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 460px) {
+  .welcome {
+    font-size: 65px;
+  }
+  .btn-wrap {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .shrek-btn {
+    margin: 10px 0;
+  }
+  .lang-changer__en {
+    margin-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .lang-changer__ru {
+    margin-left: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 410px) {
+  ul.footer__list {
+    margin-top: 115px;
+  }
+}
+
+@media (max-width: 400px) {
+  .welcome {
+    font-size: 55px;
+  }
+  .shrek-img {
+    width: 250px;
+    height: 456px;
+  }
+}
+
+@media (max-width: 360px) {
+  .welcome {
+    font-size: 50px;
+  }
+  .shrek-btn {
+    padding: 5px 7px;
+    font-size: 21px;
+  }
+}

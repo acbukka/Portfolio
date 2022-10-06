@@ -1,0 +1,251 @@
+$orange: #f1cdb3;
+$white: #ffffff;
+$softwhite: #fafafa;
+$gray: #cdcdcd;
+$darkgray: #545454;
+$softdark: #292929;
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Georgia;
+  src: url(../../../assets/fonts/georgia.ttf);
+}
+
+body {
+  font-family: Georgia;
+}
+
+.burger-cover,
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  opacity: 0;
+}
+
+.burger-cover {
+  transition: all 0.3s;
+}
+.header-inner.active .burger-cover {
+  z-index: 1;
+  opacity: 1;
+}
+.body.active .cover {
+  z-index: 2;
+  opacity: 1;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.header-bg {
+  background: url(../../../assets/images/noise_transparent@2x.png),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  height: 908px;
+  margin-bottom: 80px;
+}
+
+.header {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  height: 908px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-family: Georgia;
+  margin-bottom: 6px;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  font-size: 32px;
+  color: $orange;
+}
+
+.header-title__span {
+  font-family: "Arial";
+  text-align: right;
+  margin-left: 5px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: $white;
+}
+
+ul.header-nav__list {
+  margin-bottom: 5px;
+  display: flex;
+  font-family: "Arial";
+}
+
+.header-logo {
+  transition: all 0.3s;
+}
+.header-logo-two {
+  display: none;
+}
+.header-inner.active .header-logo {
+  opacity: 0;
+}
+.header-nav__list li + li {
+  margin-left: 36px;
+}
+.header-nav__list-link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #cdcdcd;
+  position: relative;
+  padding-bottom: 7px;
+  transition: all 0.3s;
+}
+.header-nav__list-link::before {
+  content: "";
+  position: absolute;
+  background-color: #f1cdb3;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  transition: all 0.5s;
+}
+.header-nav__list-item.active-nav .header-nav__list-link::before {
+  width: 100%;
+}
+.header-nav__list-item.active-nav .header-nav__list-link {
+  color: $softwhite;
+}
+.header-nav__list-link:hover {
+  color: #fafafa;
+}
+.burger-btn {
+  background-image: url(../../../assets/images/icons/burger.svg);
+  width: 30px;
+  height: 22px;
+  position: absolute;
+  right: 20px;
+  top: -12px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.main-bg {
+  margin-top: 59px;
+}
+.not-only {
+  margin-top: 223px;
+  max-width: 460px;
+  &__title {
+    max-width: 310px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    color: $white;
+  }
+  &__text {
+    font-family: "Arial";
+    margin-top: 42px;
+    margin-bottom: 56px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $gray;
+  }
+  &__btn {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    color: $softdark;
+    background-color: $orange;
+    border: none;
+    letter-spacing: 0.06em;
+    padding: 15px 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &__btn:hover {
+    background-color: #fddcc4;
+  }
+}
+.our-friends__inner {
+  margin-top: 80px;
+}
+@import "about.scss";
+@import "ourFriends.scss";
+@import "help.scss";
+@import "addition.scss";
+@import "footer.scss";
+@import "adaptive.scss";

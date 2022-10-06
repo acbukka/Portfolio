@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link type="image/x-icon" href="images/logo.svg" rel="shortcut icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <div class="header__logo">
+          <a href="" class="header__logo-link">
+            <svg class="header__logo-img" width="50" height="40" viewBox="0 0 50 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.4506 0.259178C19.0919 0.696909 17.9456 1.47652 17.6601 2.15634L17.5398 2.4419L15.6561 2.43301L15.4116 1.93006C15.2253 1.54668 15.063 1.3708 14.7263 1.18701L14.2864 0.945911H11.1062C6.93498 0.945911 6.40895 1.15341 6.40895 2.80355V3.26796L5.69955 3.61478C3.08441 4.8924 1.03538 7.41602 0.225789 10.3546L0.000346207 11.1748V21.2584C0.000346207 32.2698 -0.0327188 31.5584 0.547422 33.1166C1.84798 36.6086 4.86291 39.1352 8.54916 39.8258C9.78859 40.0581 40.2114 40.0581 41.4508 39.8258C45.1371 39.1362 48.152 36.6096 49.4526 33.1166C50.0327 31.5584 49.9997 32.2698 49.9997 21.2584V11.1748L49.7832 10.4031C48.649 6.36468 45.7433 3.61182 41.6342 2.67905C41.02 2.53972 40.2134 2.50514 36.6765 2.46858L32.4532 2.42412L32.3369 2.14745C32.0504 1.46565 30.8209 0.645527 29.4663 0.233488C28.3992 -0.0915987 21.4756 -0.0718366 20.4506 0.259178ZM40.0601 5.82221C43.053 6.12555 45.3856 7.95256 46.3976 10.7874L46.6731 11.5591L46.7012 20.871C46.7332 31.5189 46.7653 31.0218 45.9236 32.7342C44.9758 34.662 43.064 36.1205 40.9288 36.5453C39.7856 36.7726 10.2114 36.7726 9.07118 36.5453C6.91594 36.1145 5.0112 34.6284 4.00923 32.5949C3.24473 31.0426 3.26677 31.4072 3.29883 20.871L3.32689 11.5591L3.63149 10.7163C4.60841 8.01679 6.9961 6.11666 9.77356 5.82912C10.9589 5.7066 38.8517 5.69968 40.0601 5.82122V5.82221ZM9.51706 6.88837C6.37889 7.34191 4.35391 9.89419 4.35391 13.398V14.6954H11.0661L11.2915 14.2369C12.2845 12.2123 14.2844 10.0167 16.4357 8.58692C17.2402 8.05236 19.3614 6.97631 19.6109 6.97631C19.669 6.97631 19.7161 6.93284 19.7161 6.87948C19.7161 6.76091 10.3457 6.76782 9.51706 6.88738V6.88837ZM30.2839 6.85478C30.2839 6.90023 30.4492 6.99509 30.6506 7.06524C33.7206 8.12943 37.462 11.4702 38.7385 14.2863L38.9249 14.6964H45.6471V13.399C45.6471 10.1284 44.1341 7.98418 41.1462 7.01683C40.5581 6.82612 30.2849 6.67395 30.2849 6.85576L30.2839 6.85478ZM24.0707 7.51779C12.6663 8.61558 7.13237 20.9748 14.0931 29.7976C21.7892 39.5512 37.8768 34.7015 38.8858 22.3236C39.5611 14.0343 32.2528 6.73126 24.0707 7.51779ZM26.6638 10.9455C33.2327 11.8753 37.3277 18.963 34.8278 25.0774C31.9482 32.1216 22.708 33.9279 17.4136 28.4804C10.3908 21.2544 16.5819 9.51871 26.6638 10.9455ZM23.8723 12.5719C17.9617 13.395 14.553 19.3474 16.8885 24.7701C19.5698 30.9942 28.5605 31.7659 32.376 26.1001C36.5512 19.9007 31.2949 11.5394 23.8723 12.5719ZM27.7168 13.9098C28.8581 14.2596 29.7118 15.0768 29.7318 15.8366C29.7779 17.5886 26.2289 17.5332 25.0416 15.7635C24.1388 14.4187 25.747 13.3051 27.7168 13.9098ZM22.701 27.2552C23.7821 27.4805 25.3923 28.4557 25.3923 28.8846C25.3923 29.8865 21.7581 29.2393 20.697 28.0486C19.9636 27.2246 20.8564 26.8708 22.701 27.2552ZM41.9128 30.9991C39.8938 31.6167 40.2846 34.3863 42.3897 34.3794C44.5309 34.3725 44.6902 31.2629 42.564 30.9734C42.3486 30.9438 42.056 30.9556 41.9128 31.0001V30.9991Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li>
+              <a href="#skills" class="header__nav-item" data-i18="skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="header__nav-item" data-i18="portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a href="#video" class="header__nav-item" data-i18="video">Video</a>
+            </li>
+            <li>
+              <a href="#price" class="header__nav-item" data-i18="price">Price</a>
+            </li>
+            <li>
+              <a href="#contacts" class="header__nav-item" data-i18="contacts">Contacts</a>
+            </li>
+          </ul>
+          <div class="header__lang">
+            <input type="radio" id="en" class="header__lang-btn header__en" name="lang" value="en">
+            <label class="header__lang-label__en" for="en">en</label>
+            <span>/</span>
+            <input type="radio" id="ru" class="header__lang-btn header__ru" name="lang" value="ru">
+            <label class="header__lang-label__ru" for="ru">ru</label>
+          </div>
+          <button class="header__theme-btn">
+            <svg class="header__theme-img" id="light" width="45" height="45" viewBox="0 0 45 45" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.8375 17.2125C23.95 17.2125 25.0376 17.5424 25.9626 18.1605C26.8876 18.7786 27.6086 19.6571 28.0343 20.6849C28.4601 21.7127 28.5715 22.8437 28.3544 23.9349C28.1374 25.026 27.6016 26.0283 26.815 26.815C26.0283 27.6016 25.026 28.1374 23.9349 28.3544C22.8437 28.5715 21.7127 28.4601 20.6849 28.0343C19.6571 27.6086 18.7786 26.8876 18.1605 25.9626C17.5424 25.0376 17.2125 23.95 17.2125 22.8375C17.2144 21.3462 17.8076 19.9166 18.8621 18.8621C19.9166 17.8076 21.3462 17.2144 22.8375 17.2125ZM22.8375 14.4C21.1687 14.4 19.5374 14.8949 18.1499 15.822C16.7623 16.7491 15.6809 18.0669 15.0423 19.6086C14.4037 21.1504 14.2366 22.8469 14.5621 24.4836C14.8877 26.1203 15.6913 27.6237 16.8713 28.8037C18.0513 29.9837 19.5547 30.7873 21.1914 31.1129C22.8281 31.4384 24.5246 31.2713 26.0664 30.6327C27.6081 29.9941 28.9259 28.9127 29.853 27.5251C30.7802 26.1376 31.275 24.5063 31.275 22.8375C31.275 20.5997 30.3861 18.4536 28.8037 16.8713C27.2214 15.2889 25.0753 14.4 22.8375 14.4Z"
+                fill="white" />
+              <path d="M7.58531 9.58078L9.57375 7.59094L14.5041 12.5213L12.5156 14.5097L7.58531 9.58078Z"
+                fill="white" />
+              <path d="M2.8125 21.1008H9.84375V23.9133H2.8125V21.1008Z" fill="white" />
+              <path d="M7.58531 35.4333L12.5156 30.503L14.5041 32.4928L9.57375 37.4217L7.58531 35.4333Z" fill="white" />
+              <path d="M21.0938 35.1633H23.9062V42.1945H21.0938V35.1633Z" fill="white" />
+              <path d="M30.4973 32.4928L32.4858 30.503L37.4161 35.4333L35.4277 37.4217L30.4973 32.4928Z" fill="white" />
+              <path d="M35.1562 21.1008H42.1875V23.9133H35.1562V21.1008Z" fill="white" />
+              <path d="M30.4973 12.5213L35.4277 7.59094L37.4161 9.58078L32.4858 14.5097L30.4973 12.5213Z"
+                fill="white" />
+              <path d="M21.0938 2.81953H23.9062V9.85078H21.0938V2.81953Z" fill="white" />
+            </svg>
+            <svg class="header__theme-img__dark" id="dark" width="41" height="40" viewBox="0 0 41 40" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M21.4528 40C15.7066 40 10.315 37.8174 6.27098 33.8545C2.22701 29.8915 5.02421e-07 24.6074 5.02421e-07 18.9761C-0.00085731 15.0913 1.09674 11.2823 3.17098 7.97181C5.24521 4.66132 8.21494 1.97886 11.7505 0.222165C12.1143 0.0404498 12.5246 -0.032245 12.9302 0.0131555C13.3359 0.058556 13.7189 0.220041 14.0315 0.477451C14.344 0.734861 14.5723 1.07679 14.6878 1.46057C14.8033 1.84434 14.8009 2.25294 14.6809 2.63538C13.672 5.82896 13.5728 9.23201 14.3941 12.4768C15.2154 15.7216 16.9259 18.6847 19.3408 21.046C21.0739 22.757 23.136 24.1141 25.4078 25.0388C27.6796 25.9635 30.116 26.4374 32.576 26.433C34.4579 26.4345 36.3292 26.1578 38.1269 25.6125C38.5172 25.4948 38.9342 25.4924 39.3258 25.6056C39.7175 25.7188 40.0665 25.9425 40.3291 26.2488C40.5918 26.5552 40.7566 26.9306 40.8029 27.3282C40.8492 27.7257 40.775 28.1279 40.5895 28.4843C38.7969 31.9492 36.0597 34.8596 32.6817 36.8923C29.3036 38.9251 25.4169 40.0008 21.4528 40ZM11.6763 3.31431C8.93463 4.94908 6.66986 7.24958 5.10105 9.99327C3.53225 12.737 2.71252 15.831 2.72115 18.9761C2.72115 29.0982 11.1241 37.3333 21.4528 37.3333C24.6621 37.3418 27.8193 36.5384 30.619 35.001C33.4187 33.4636 35.7662 31.2441 37.4343 28.5573C35.8413 28.9186 34.2113 29.1007 32.5762 29.1C29.7587 29.1053 26.9682 28.5628 24.3661 27.5041C21.764 26.4453 19.4021 24.8913 17.417 22.9319C14.8382 20.4094 12.9578 17.2845 11.9533 13.8522C10.9489 10.4199 10.8536 6.79329 11.6763 3.31481V3.31431Z"
+                fill="white" />
+            </svg>
+
+          </button>
+          <button class="burger-nav"></button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__item">
+          <h1 class="hero__item-title" data-i18="hero-title">Alexa Rise</h1>
+          <p class="hero__item-text" data-i18="hero-text">Save sincere emotions, romantic feelings and happy moments of
+            life together with
+            professional photographer Alexa Rise</p>
+          <a href="" class="hero__item-link" data-i18="hire">Hire me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="section__title skills__title">
+          <h2 class="title" data-i18="skills">Skills</h2>
+        </div>
+        
+        <div class="skills__inner">
+
+          <div class="skills__item">
+            <img src="images/skills/camera.svg" alt="" class="skills__item-img">
+            <h4 class="skills__item-title" data-i18="skill-title-1">Digital photography</h4>
+            <p class="skills__item-text" data-i18="skill-text-1">High-quality photos in the studio and on the nature
+            </p>
+          </div>
+          <div class="skills__item">
+            <img src="images/skills/video.svg" alt="" class="skills__item-img">
+            <h4 class="skills__item-title" data-i18="skill-title-2">Video shooting</h4>
+            <p class="skills__item-text" data-i18="skill-text-2">Capture your moments so that they always stay with you
+            </p>
+          </div>
+          <div class="skills__item">
+            <img src="images/skills/image.svg" alt="" class="skills__item-img">
+            <h4 class="skills__item-title" data-i18="skill-title-3">Rotouch</h4>
+            <p class="skills__item-text" data-i18="skill-text-3">I strive to make photography surpass reality</p>
+          </div>
+          <div class="skills__item">
+            <img src="images/skills/mic.svg" alt="" class="skills__item-img">
+            <h4 class="skills__item-title" data-i18="skill-title-4">Audio</h4>
+            <p class="skills__item-text" data-i18="skill-text-4">Professional sounds recording for video, advertising,
+              portfolio</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section__title portfolio__title"><h2 class="title" data-i18="portfolio">Portfolio</h2></div>
+        <div class="portfolio-filter__nav-list">
+          <ul class="portfolio-filter__list">
+            <li class="portfolio-filter__list-item">
+              <button class="portfolio-filter__list-btn btn-active" data-i18="winter"
+                data-season="winter">Winter</button>
+            </li>
+            <li class="portfolio-filter__list-item">
+              <button class="portfolio-filter__list-btn btn-active" data-i18="spring"
+                data-season="spring">Spring</button>
+            </li>
+            <li class="portfolio-filter__list-item">
+              <button class="portfolio-filter__list-btn btn-active" data-i18="summer"
+                data-season="summer">Summer</button>
+            </li>
+            <li class="portfolio-filter__list-item">
+              <button class="portfolio-filter__list-btn btn-active" data-i18="autumn"
+                data-season="autumn">Autumn</button>
+            </li>
+          </ul>
+        </div>
+        <div class="portfolio__inner">
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/1.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/2.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/3.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/4.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/5.jpg" alt=""></a>
+          </div>
+          <div class="portfolio-item">
+            <a href="#" class="portfolio-item__link"> <img class="portfolio-item__img"
+                src="images/portfolio/autumn/6.jpg" alt=""></a>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="video" id="video">
+      <div class="container media-container">
+        <div class="section__title video__title">
+          <h2 class="title" data-i18="video">Video</h2>
+        </div>
+        <div class="video-wrap">
+
+          <video class="video-item"
+            src="video/wedding.mp4"
+            poster="images/player.jpg">
+          </video>
+
+                <button class="play-icon">
+              <svg class="play-icon__img" width="150" height="150" viewBox="0 0 150 150" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M66.2651 11.7212C65.7685 11.8411 63.3283 12.2693 60.8433 12.672C14.1708 20.2423 -7.90455 77.1726 20.9899 115.449C29.9882 127.369 50.6521 140.866 51.6756 135.492C51.8037 134.82 50.5736 133.971 47.5205 132.623C34.9949 127.091 23.6604 116.192 17.4762 103.733C-4.98486 58.4864 33.4435 7.28385 83.625 15.5953C91.1634 16.8443 92.4726 14.2411 85.0848 12.6921C81.7222 11.987 68.0793 11.2836 66.2651 11.7218V11.7212ZM66.5663 25.0636C57.7417 26.364 46.386 30.8823 46.386 33.0933C46.386 34.8088 47.6604 34.676 52.3181 32.475C77.8305 20.4212 108.891 33.61 118.133 60.4211C133.493 104.986 82.7834 142.71 44.2777 115.362C22.8809 100.166 17.9468 69.9821 33.3071 48.248C37.3831 42.4807 35.2382 40.0423 31.076 45.7122C5.43128 80.648 32.2057 129.994 75.4706 127.531C119.145 125.044 140.027 72.7104 109.973 41.0628C98.9551 29.4608 81.1807 22.9092 66.5669 25.0624L66.5663 25.0636ZM119.076 32.9315C118.18 33.8274 118.865 35.4307 121.733 39.1565C142.993 66.7766 136.032 108.061 106.841 127.485C93.688 136.237 82.1392 138.663 60.5427 137.21C58.5088 137.073 58.1327 137.229 58.1327 138.21C58.1327 142.662 83.9823 141.455 96.799 136.403C134.382 121.592 149.2 73.7793 126.546 40.4203C122.247 34.0907 120.085 31.9228 119.076 32.9321L119.076 32.9315ZM55.063 55.484C53.9947 56.664 53.9031 58.0476 53.7396 75.4795C53.4708 104.137 50.6185 103.271 85.2212 85.0411C102.085 76.1563 102.18 76.435 77.9929 63.7476C59.0829 53.8281 57.1831 53.1431 55.063 55.484ZM75.9608 66.326C94.334 75.9224 94.4297 75.9821 93.1447 77.0486C91.7037 78.2451 58.9411 95.1809 58.0689 95.1809C57.3685 95.1809 57.2291 92.0315 57.2291 76.2053C57.2291 62.8949 57.4258 57.2291 57.887 57.2291C58.2484 57.2291 66.3821 61.3228 75.9614 66.326H75.9608Z"
+                  fill="white" />
+              </svg>
+            </button>
+
+          <div class="player-controls">
+
+            <button class="play-button" title="Play">►</button>
+
+            <div class="video-progress">
+              <div class="video-progress-filled"></div>
+            </div>
+
+            <button class="mute control-button">
+              <div class="slash"></div>
+              <i class="fas fa-volume-up"></i>
+            </button>
+
+            <input class="volume" type="range" min="0" max="1" step="0.01" value="0.5">
+
+            <div class="time">
+              <span class="current">0:00</span> / <span class="duration">0:00</span>
+            </div>
+
+
+            <button class="fullscreen control-button">
+              <i class="fas fa-expand"></i>
+            </button>
+            
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="price" id="price">
+      <div class="container">
+        <div class="section__title price__title">
+          <h2 class="title" data-i18="price">Price</h2>
+        </div>
+        <div class="price-content">
+
+          <div class="price-content__item">
+            <div class="price-content__item-wrapper">
+              <h3 class="price-content__item-title">Standard</h3>
+              <h5 class="price-content__item-nub">500 $</h5>
+              <p class="price-content__item-descr" data-i18="price-description-1-span-1">One location</p>
+              <p class="price-content__item-descr" data-i18="price-description-1-span-2">120 photos in color</p>
+              <p class="price-content__item-descr" data-i18="price-description-1-span-3">12 photos in retouch</p>
+              <p class="price-content__item-descr" data-i18="price-description-1-span-4">Readiness 2-3 weeks</p>
+              <p class="price-content__item-descr" data-i18="price-description-1-span-5">Make up, visage</p>
+              <button class="price-content__item-btn" data-i18="order">Order shooting</button>
+            </div>
+          </div>
+
+          <div class="price-content__item">
+            <div class="price-content__item-wrapper">
+              <h3 class="price-content__item-title">Premium</h3>
+              <h5 class="price-content__item-nub">700 $</h5>
+              <p class="price-content__item-descr" data-i18="price-description-2-span-1">One or two locations</p>
+              <p class="price-content__item-descr" data-i18="price-description-2-span-2" price-description-2-span-2>200
+                photos in
+                color</p>
+              <p class="price-content__item-descr" data-i18="price-description-2-span-3">20 photos in retouch</p>
+              <p class="price-content__item-descr" data-i18="price-description-2-span-4">Readiness 1-2 weeks</p>
+              <p class="price-content__item-descr" data-i18="price-description-2-span-5">Make up, visage</p>
+              <button class="price-content__item-btn" data-i18="order">Order shooting</button>
+            </div>
+          </div>
+
+          <div class="price-content__item">
+            <div class="price-content__item-wrapper">
+              <h3 class="price-content__item-title">Gold</h3>
+              <h5 class="price-content__item-nub">1000 $</h5>
+              <p class="price-content__item-descr" data-i18="price-description-3-span-1">Tree locations or more</p>
+              <p class="price-content__item-descr" data-i18="price-description-3-span-2">300 photos in color</p>
+              <p class="price-content__item-descr" data-i18="price-description-3-span-3">50 photos in retouch</p>
+              <p class="price-content__item-descr" data-i18="price-description-3-span-4">Readiness 1 weeks</p>
+              <p class="price-content__item-descr" data-i18="price-description-3-span-5">Make up, visage, hairstyle</p>
+              <button class="price-content__item-btn" data-i18="order">Order shooting</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacts">
+      <div class="container">
+
+        <div class="contact-item__wrapper">
+          <div class="contact-item">
+            <h2 class="title contact-title" data-i18="contact-me">Contact me</h2>
+            <input class="contact-item__email" type="email" placeholder="E-mail">
+            <input class="contact-item__tel" type="tel" placeholder="Phone">
+            <textarea class="contact-item__mess" placeholder="Message"></textarea>
+            <button class="contact-item__btn" data-i18="send-message">Send message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__author">
+          <p class="footer__author-sign">©</p>
+          <p class="footer__author-sign">2022</p>
+          <a class="footer__author-sign footer__author-gh" href="https://github.com/acbukka">github</a>
+        </div>
+
+        <div class="footer__rschool">
+          <a class="footer__rschool-sign" href="https://rs.school/js-stage0/">
+            Rolling Scopes School
+          </a>
+        </div>
+
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-img" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15.36 0.666992C17.76 0.666992 18.267 0.693992 19.493 0.746992C20.906 0.813992 21.88 1.03999 22.72 1.37399C23.6 1.70699 24.347 2.17399 25.08 2.90699C25.827 3.63999 26.28 4.38699 26.627 5.26699C26.96 6.10699 27.174 7.07999 27.24 8.50699C27.307 9.77399 27.32 10.267 27.32 12.934V15.067C27.32 17.734 27.307 18.227 27.24 19.494C27.217 20.659 26.994 21.764 26.604 22.788L26.626 22.721C26.279 23.601 25.826 24.348 25.093 25.081C24.346 25.828 23.6 26.281 22.72 26.628C21.88 26.961 20.907 27.175 19.493 27.241C18.226 27.308 17.72 27.321 15.053 27.321H12.933C10.266 27.321 9.77296 27.308 8.49296 27.241C7.32796 27.218 6.22296 26.995 5.19896 26.605L5.26596 26.627C4.34296 26.274 3.55596 25.753 2.90696 25.094L2.90596 25.093C2.23996 24.441 1.71396 23.649 1.37396 22.764L1.35896 22.719C0.991964 21.763 0.768964 20.657 0.745964 19.502V19.492C0.692964 18.45 0.662964 17.229 0.662964 16.002C0.662964 15.776 0.663964 15.55 0.665964 15.325V15.359V12.626C0.665964 10.226 0.692964 9.71899 0.745964 8.49299C0.812964 7.07999 1.03896 6.10599 1.35896 5.26599C1.70596 4.38599 2.15896 3.63899 2.90596 2.90599C3.55096 2.23899 4.33996 1.71599 5.22296 1.38699L5.26596 1.37299C6.22096 1.00199 7.32596 0.773992 8.48096 0.746992H8.49296C9.71996 0.693992 10.226 0.666992 12.626 0.666992H15.36ZM15.387 3.06699H12.6C10.293 3.06699 9.79996 3.09399 8.59996 3.14699C7.30696 3.19999 6.59996 3.41399 6.13296 3.59999C5.50596 3.83999 5.06596 4.13299 4.59996 4.59999C4.13396 5.06699 3.83996 5.50699 3.59996 6.13299C3.42696 6.59999 3.19996 7.30599 3.14696 8.61299C3.09396 9.81299 3.06696 10.293 3.06696 12.613V15.386C3.06696 17.706 3.09396 18.186 3.14696 19.386C3.19996 20.679 3.41396 21.386 3.59996 21.853C3.83996 22.48 4.13296 22.92 4.59996 23.386C5.06696 23.852 5.50696 24.146 6.13296 24.386C6.59996 24.573 7.30596 24.786 8.61296 24.839C9.90596 24.906 10.373 24.919 13.253 24.919H14.733C17.626 24.919 18.08 24.906 19.386 24.839C20.679 24.786 21.386 24.572 21.853 24.386C22.48 24.146 22.92 23.853 23.386 23.386C23.852 22.919 24.146 22.479 24.386 21.853C24.573 21.386 24.786 20.68 24.839 19.386C24.906 18.079 24.919 17.626 24.919 14.733V13.266C24.919 10.373 24.906 9.90599 24.839 8.59899C24.786 7.30599 24.572 6.59899 24.386 6.13199C24.16 5.53099 23.819 5.01799 23.387 4.59999L23.386 4.59899C22.966 4.16599 22.454 3.82499 21.881 3.60799L21.853 3.59899C21.121 3.32299 20.275 3.15799 19.391 3.14599H19.386C18.358 3.09399 17.155 3.06399 15.944 3.06399C15.748 3.06399 15.552 3.06499 15.356 3.06599H15.386L15.387 3.06699ZM14 7.14699C17.781 7.14699 20.847 10.212 20.847 13.994C20.847 17.776 17.782 20.841 14 20.841C10.219 20.841 7.15296 17.776 7.15296 13.994C7.15296 10.212 10.218 7.14699 14 7.14699ZM14 9.54699C11.544 9.54699 9.55296 11.538 9.55296 13.994C9.55296 16.45 11.544 18.441 14 18.441C16.456 18.441 18.447 16.45 18.447 13.994C18.447 11.538 16.456 9.54699 14 9.54699ZM21.107 5.27999C21.991 5.27999 22.707 5.99599 22.707 6.87999C22.707 7.76399 21.991 8.47999 21.107 8.47999C20.223 8.47999 19.507 7.76399 19.507 6.87999C19.507 5.99599 20.223 5.27999 21.107 5.27999Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-img" width="17" height="28" viewBox="0 0 17 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.04 27.333L5 15.666H0V10.666H5V7.33302C5 2.84002 7.787 0.666016 11.8 0.666016C13.72 0.666016 15.373 0.799016 15.853 0.866016V5.57302H13.066C10.893 5.57302 10.466 6.61302 10.466 8.13302V10.666H16.666L14.999 15.666H10.466V27.333H5.039H5.04Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-img" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M27.333 2.83998C26.333 3.33298 25.333 3.50698 24.16 3.66698C25.333 2.99998 26.16 1.99998 26.493 0.666984C25.488 1.27498 24.317 1.73798 23.07 1.98898L23 2.00098C21.969 0.986984 20.56 0.354984 19.004 0.333984H19C16.16 0.333984 13.667 2.84098 13.667 5.84098C13.667 6.33398 13.667 6.66798 13.84 7.00098C9.26197 6.82298 5.22097 4.66398 2.52897 1.36198L2.50697 1.33398C2.08197 2.05998 1.83097 2.93198 1.83097 3.86298C1.83097 3.97198 1.83397 4.08098 1.84097 4.18898L1.83997 4.17398C1.87397 6.05198 2.84897 7.69498 4.31297 8.65498L4.33397 8.66798C3.49397 8.66798 2.66697 8.33498 1.82697 8.00098C1.82697 10.668 3.66697 12.841 6.15997 13.334C5.66697 13.507 5.15997 13.507 4.66697 13.507C4.33397 13.507 3.99997 13.507 3.66697 13.334C4.33397 15.507 6.33397 17.174 8.83997 17.174C7.03997 18.629 4.72397 19.509 2.20297 19.509C2.13197 19.509 2.06097 19.508 1.98997 19.507H2.00097H0.667969C3.03297 21.016 5.90397 21.936 8.98397 22H9.00097C19.001 22 24.508 13.667 24.508 6.49298V5.82598C25.655 5.03598 26.601 4.03898 27.311 2.88198L27.335 2.83998H27.333Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-link">
+                <svg class="footer__social-img" width="28" height="28" viewBox="0 0 28 28" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M14 0.666992C6.65699 0.693992 0.713989 6.65299 0.713989 14C0.713989 19.599 4.16599 24.393 9.05699 26.368L9.14599 26.4C9.01299 25.347 8.91899 23.733 9.18599 22.573L10.746 15.946C10.746 15.946 10.346 15.146 10.346 13.973C10.346 12.12 11.426 10.746 12.773 10.746C13.906 10.746 14.466 11.599 14.466 12.613C14.466 13.76 13.733 15.466 13.346 17.053C13.026 18.386 14.013 19.466 15.333 19.466C17.706 19.466 19.52 16.973 19.52 13.373C19.52 10.173 17.227 7.95999 13.947 7.95999C13.871 7.95599 13.783 7.95399 13.694 7.95399C10.505 7.95399 7.92099 10.539 7.92099 13.727C7.92099 13.729 7.92099 13.731 7.92099 13.733C7.92099 14.88 8.36099 16.106 8.90799 16.773C9.01499 16.906 9.02799 17.026 8.98799 17.16L8.61499 18.667C8.56199 18.907 8.41499 18.974 8.17499 18.854C6.49499 18.067 5.45499 15.654 5.45499 13.681C5.45499 9.48099 8.52199 5.62799 14.282 5.62799C18.895 5.62799 22.509 8.90799 22.509 13.321C22.509 17.921 19.602 21.614 15.576 21.614C14.243 21.614 12.963 20.907 12.536 20.081L11.696 23.241C11.265 24.578 10.704 25.739 10.008 26.804L10.042 26.748C11.212 27.12 12.558 27.335 13.953 27.335C21.317 27.335 27.286 21.365 27.286 14.002C27.286 6.65499 21.344 0.695992 14.004 0.668992H14.001L14 0.666992Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://kit.fontawesome.com/7822f68d4c.js" crossorigin="anonymous"></script>
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

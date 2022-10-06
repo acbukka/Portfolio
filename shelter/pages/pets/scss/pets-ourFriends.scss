@@ -1,0 +1,236 @@
+.our-friends {
+  background-color: #f6f6f6;
+  padding: 80px 0 100px;
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+}
+.slider-inner {
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  gap: 30px 40px;
+  flex-wrap: wrap;
+  transition: all 1s;
+}
+.slider-item {
+  max-width: 270px;
+  background-color: #fafafa;
+  border-radius: 9px;
+  padding-bottom: 30px;
+  transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+    margin-bottom: 30px;
+  }
+  &__btn {
+    padding: 13px 43px;
+    background-color: transparent;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    margin: 0 auto;
+    display: block;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  &__img {
+    margin-bottom: 30px;
+  }
+}
+
+.slider-item:hover .slider-item__btn {
+  border: 2px solid #fddcc4;
+  background-color: #fddcc4;
+}
+.slider-item:hover {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background-color: #fff;
+}
+
+ul.slider-btn__list {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.slider-btn__list li + li {
+  margin-left: 20px;
+}
+.slider-btn__item button[disabled]:hover {
+  background-color: transparent;
+  border: 2px solid #cdcdcd;
+  cursor: default;
+}
+.slider-btn__item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border: 2px solid #f1cdb3;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.slider-btn__item button:hover {
+  background-color: #f1cdb3;
+  border: 2px solid #f1cdb3;
+  cursor: pointer;
+}
+.slider-btn__info {
+  cursor: default;
+  background-color: #f1cdb3;
+  border: 2px solid #f1cdb3;
+  display: flex;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #292929;
+}
+.slider-btn__item button[disabled] {
+  border: 2px solid #cdcdcd;
+}
+.slider-btn__item button[disabled] path {
+  fill: #cdcdcd;
+}
+//
+.modal {
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  width: 900px;
+  height: 500px;
+  background-color: #fafafa;
+  border-radius: 11px;
+  z-index: 2;
+}
+.body.active .modal {
+  visibility: visible;
+  z-index: 999;
+  opacity: 1;
+}
+
+.modal-btn {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  right: -41px;
+  top: -52px;
+  border-radius: 50%;
+  border: 2px solid #f1cdb3;
+  background-color: transparent;
+  z-index: 2;
+  transition: all 0.3s;
+}
+.modal-btn:hover {
+  cursor: pointer;
+  background-color: #fddcc4;
+  border: 2px solid #fddcc4;
+}
+.modal-inner {
+  display: flex;
+}
+.modal-image {
+  width: 500px;
+}
+.modal-img {
+  border-radius: 9px 0 0 9px;
+  width: 500px;
+}
+.modal-info {
+  width: 400px;
+  padding: 50px 20px 88px 29px;
+}
+.modal-info__title {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+.modal-info-block {
+  display: flex;
+  margin-bottom: 40px;
+}
+.modal-info-type,
+.modal-info-breed {
+  font-family: "Georgia";
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+}
+.modal-info-type {
+  margin-right: 2px;
+}
+.modal-info-breed {
+  margin-left: 2px;
+}
+.modal-info-text {
+  font-family: "Georgia";
+  font-size: 15px;
+  line-height: 114%;
+  letter-spacing: 0.06em;
+  margin-bottom: 40px;
+}
+ul.modal-info-list {
+  list-style: disc;
+  padding-left: 15px;
+}
+.modal-info__item {
+  position: relative;
+  display: flex;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 113%;
+  letter-spacing: 0.06em;
+  margin-bottom: 11px;
+  display: list-item;
+  letter-spacing: 0.14em;
+}
+.modal-info__item::marker {
+  color: #f1cdb3;
+}
+.modal-info__item span {
+  letter-spacing: 0em;
+}
+.modal-info__item-age,
+.modal-info__item-ino,
+.modal-info__item-dis,
+.modal-info__item-par {
+  font-weight: 400;
+}

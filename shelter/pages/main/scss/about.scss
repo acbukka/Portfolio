@@ -1,0 +1,36 @@
+$orange: #f1cdb3;
+$white: #ffffff;
+$softwhite: #fafafa;
+$gray: #cdcdcd;
+$darkgray: #545454;
+$softdark: #292929;
+.about {
+  margin-bottom: 100px;
+  &-item {
+    margin-top: 14px;
+    max-width: 430px;
+  }
+  &-title {
+    margin-bottom: 23px;
+    max-width: 370px;
+    color: $softdark;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+  &-text {
+    max-width: 430px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4c4c4c;
+    font-family: "Arial";
+  }
+}
+.about-inner {
+  margin: 0 auto;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
+}
