@@ -47,3 +47,4 @@
 6. "Random jokes" - just for fun приложение с генерацией случайных фраз ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
 - научился "подтягивать" данные из API и работать с ними
 - реализовал простые функции на JS
+
