@@ -4,7 +4,7 @@
 - ознакомился с основами Vue.js (vue-methods, lifecycle hooks, vuex, vue-router, vue-directives, components UI)
 - реализовал добавление, удаление задач
 - добавил сохранение задач в localStorage
-2. #### "Cozy House" - объемный двухстраничный landing page ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+2. #### "Cozy House" - объемный двухстраничный landing page ([source](https://github.com/acbukka/Portfolio/tree/dev/shelter) | [deploy](https://acbukka.github.io/Portfolio/shelter/pages/main/))
 - закрепил SASS(SCSS);
 - закрепил БЭМ;
 - реализовал адаптивную верстку;
@@ -23,11 +23,11 @@
 - реализовал пагинацию по страницам таблицы
 
 # Другие работы:
-1. #### "Portfolio" - одностраничный landing page ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+1. #### "Portfolio" - одностраничный landing page ([source](https://github.com/acbukka/Portfolio/tree/dev/portfolio) | [deploy](https://acbukka.github.io/Portfolio/portfolio/))
 - обучился технологии BEM, адаптивной верстке
 - реализовал собственный видеоплеер
 - научился менять тему и язык на странице с сохранением выбора
-2. #### "Kaban Game" - web игра на чистом JS ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+2. #### "Kaban Game" - web игра на чистом JS ([source](https://github.com/acbukka/Portfolio/tree/dev/js30-dino) | [deploy](https://acbukka.github.io/Portfolio/js30-dino/))
 - научился работать с анимациями
 - реализовал "игровые" функции
 - научился сохранять результаты игры в таблицу
@@ -37,10 +37,9 @@
 4. #### "Vue-drive-form" - форма с валидацией данных на Vue ([source](https://github.com/acbukka/vue-drive-form) | [deploy](https://acbukka.github.io/vue-drive-form/))
 - реализовал полноценную валидацию (name, phone, email)
 - реализовал отправку данных (POST) через axios на сервер и выводить ответ
-5. #### "CV" - моя первая cv page на jquery ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+5. #### "CV" - моя первая cv page на jquery ([source](https://github.com/acbukka/Portfolio/tree/dev/cv-page) | [deploy](https://acbukka.github.io/Portfolio/cv-page/))
 - с помощью jquery реализовал основные функции страницы
 - добавил адаптивность
-6. #### "Random jokes" - just for fun приложение с генерацией случайных фраз ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+6. #### "Random jokes" - just for fun приложение с генерацией случайных фраз ([source](https://github.com/acbukka/Portfolio/tree/dev/random-jokes) | [deploy](https://acbukka.github.io/Portfolio/random-jokes/))
 - научился "подтягивать" данные из API и работать с ними
 - реализовал простые функции на JS
-
