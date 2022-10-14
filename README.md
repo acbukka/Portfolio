@@ -1,26 +1,22 @@
 # Portfolio
 
-1. #### "Todanda" - Web TODO-приложение на Vue.js
-   ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+1. #### "Todanda" - Web TODO-приложение на Vue.js ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
 - ознакомился с основами Vue.js (vue-methods, lifecycle hooks, vuex, vue-router, vue-directives, components UI)
 - реализовал добавление, удаление задач
 - добавил сохранение задач в localStorage
-2. #### "Cozy House" - объемный двухстраничный landing page
-   ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
+2. #### "Cozy House" - объемный двухстраничный landing page ([source](https://github.com/acbukka/Todanda) | [deploy](https://acbukka.github.io/Todanda/))
 - закрепил SASS(SCSS);
 - закрепил БЭМ;
 - реализовал адаптивную верстку;
 - освоил работу с Figma-макетами.
 - реализовал пагинацию и слайдер с рандомизацией карточек
 
-3. #### "RetroKey" - виртуальная клавиатура на чистом JS
-   ([source](https://github.com/acbukka/virtual-keyboard/tree/gh-pages) | [deploy](https://acbukka.github.io/virtual-keyboard/))
+3. #### "RetroKey" - виртуальная клавиатура на чистом JS ([source](https://github.com/acbukka/virtual-keyboard/tree/gh-pages) | [deploy](https://acbukka.github.io/virtual-keyboard/))
 - реализовал "клавиши" через функции и работу со строками
 - с data structure отрисовал клавиатуру на двух языках
 - изучил key events и отслеживание курсора в textarea
 
-4. #### "Vue-tables" - небольшое приложение с сортировкой/фильтрацией данных на Vue.js
-   ([source](https://github.com/acbukka/vue-tables) | [deploy](https://acbukka.github.io/vue-tables/))
+4. #### "Vue-tables" - небольшое приложение с сортировкой/фильтрацией данных на Vue.js ([source](https://github.com/acbukka/vue-tables) | [deploy](https://acbukka.github.io/vue-tables/))
 - реализовал загрузку данных из ajax в формы таблицы
 - добавил фильтрацию по полям и условиям
 - добавил сортировку по столбцам таблицы
